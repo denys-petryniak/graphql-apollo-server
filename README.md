@@ -1,4 +1,4 @@
-# GraphQL Server
+# QraphQL Apollo Server
 
 ## Start the server
 ```bash 

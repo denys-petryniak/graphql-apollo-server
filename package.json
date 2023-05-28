@@ -10,9 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/server": "^4.7.1",
+    "@graphql-tools/schema": "^10.0.0",
     "graphql": "^16.6.0",
     "graphql-subscriptions": "^2.0.0",
-    "nanoid": "^4.0.2"
+    "graphql-ws": "^5.13.1",
+    "nanoid": "^4.0.2",
+    "ws": "^8.13.0"
   },
   "devDependencies": {
     "@types/node": "^20.2.2",

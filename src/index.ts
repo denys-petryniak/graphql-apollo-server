@@ -159,6 +159,9 @@ const resolvers = {
       };
       books.push(newBook);
 
+      // Publish the subscription event after adding the book
+      pubsub.publish("bookSub", { addBook: newBook });
+
       return newBook;
     },
 
@@ -189,10 +192,10 @@ const resolvers = {
 
   Subscription: {
     bookSub: {
+      subscribe: () => pubsub.asyncIterator("bookSub"),
       resolve: (payload) => {
         return payload.addBook;
       },
-      subscribe: () => pubsub.asyncIterator("books"),
     },
   },
 };

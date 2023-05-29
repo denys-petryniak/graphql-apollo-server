@@ -1,6 +1,6 @@
 import express from "express";
-import bodyParser from "body-parser";
 import cors from "cors";
+import bodyParser from "body-parser";
 import { createServer } from "http";
 import { WebSocketServer } from "ws";
 import { ApolloServer } from "@apollo/server";
